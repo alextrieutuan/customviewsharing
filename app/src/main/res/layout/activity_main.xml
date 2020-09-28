@@ -1,19 +1,25 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical"
-    android:gravity="center"
-    tools:context=".MainActivity">
+    android:gravity="center">
 
     <com.example.customview.ClockView
+        android:id="@+id/analog_clock"
         android:layout_width="300dp"
+        app:clock_view_bg_color="@color/colorPrimaryDark"
+        app:clock_view_is_reverse="false"
         android:layout_height="300dp"
         android:padding="30dp" />
 
     <com.example.customview.CompoundClockView
+        android:id="@+id/digital_clock"
         android:layout_gravity="center"
+        app:compound_clock_view_is_24h="true"
+        app:compound_clock_view_is_reverse="false"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="ClockView">
+        <attr name="clock_view_bg_color" format="color|reference"/>
+        <attr name="clock_view_is_reverse" format="boolean|reference"/>
+    </declare-styleable>
+
+    <declare-styleable name="CompoundClockView">
+        <attr name="compound_clock_view_is_24h" format="boolean|reference"/>
+        <attr name="compound_clock_view_is_reverse" format="boolean|reference"/>
+    </declare-styleable>
+</resources>
